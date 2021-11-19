@@ -1,3 +1,6 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css");
+
+
 *{
     padding: 0;
     margin: 0;
@@ -7,7 +10,7 @@
 }
 
 body{
-    background-color: rgb(110, 107, 99);
+    background-color: rgba(134, 240, 35, 0.616);
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100vh;
@@ -15,7 +18,7 @@ body{
 
 /*---------------MENU hamburguer-----------------*/
 .hamburguer{
-    background-color: red;
+    /*background-color: red;*/
     width: 2rem;
     height: 2rem;
     padding: 3px;
@@ -96,7 +99,7 @@ body{
 }
 
 .social-media i{
-    background-color: #6a3093;
+    background-color: #3f3093;
     color: white;
     height: 2.5rem;
     width: 2.5rem;
