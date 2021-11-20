@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding: 40px 4%;
+    font-family: roboto;
+    color: rgb(20, 20, 20);
+
+    /*-------imagem fixa no fundo----------*/
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+/*-----------Efeito parallax---------*/
+
+section:nth-of-type(1){
+    background-image: url("imagem-00.jpg");
+}
+
+section:nth-of-type(3){
+    background-image: url("imagem-02.jpg");
+}
+
+section:nth-of-type(5){
+    background-image: url("imagem-03.jpg");
+}
+
+section:nth-of-type(7){
+    background-image: url("imagem-01-rj.jpg");
+}
