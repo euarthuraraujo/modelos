@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de cadastro</title>
+</head>
+<body>
+    <form action="Cadastrar">
+        <div class="titulo-container">
+            <h1>Complete o seu cadastro</h1>
+        </div>
+        <div class="header-container">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <input type="text" name="sobrenome" id="sobrenome">
+        </div>
+        <div class="dados-container">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email">
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha">
+            <label for="tel">Telefone:</label>
+            <input type="tel" name="tel" id="telefone">
+            
+            <div class="reiao-container">
+                <label for="regiao">Região</label>
+                <input type="radio" name="regiao" class="regiao">
+                <label for="regiao">Norte</label>
+                <input type="radio" name="regiao" class="regiao">
+                <label for="regiao">Nordeste</label>
+                <input type="radio" name="regiao" class="regiao">
+                <label for="regiao">Centro-oeste</label>
+                <input type="radio" name="regiao" class="regiao">
+                <label for="regiao">Sul</label>
+                <input type="radio" name="regiao" class="regiao">
+                <label for="regiao">Suldeste</label>
+                <br>
+                <label for="local">Local:</label>
+                <input type="text">
+            </div>
+        </div>
+        <div class="final-container">
+            <input type="checkbox" name="envio">
+            <label for="envio">Deseja receber e-mail promocionais?</label> <br>
+            <input type="submit" value="Cadastrar" id="botao">
+        </div>
+    </form>
+</body>
+</html>
