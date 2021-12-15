@@ -5,12 +5,29 @@
 }
 
 body{
-    background-color: wheat;
+    background-color: var(--Cor-2);
     font-size: 32px;
+    font-family: var(--fonte-Poppins);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+
+:root{
+    --fonte-Poppins: 'Poppins', sans-serif;
+
+    --Cor-1: #C9F2C7;
+    --Cor-2: #ACECA1;
+    --Cor-3: #96BE8C;
+    --Cor-4: #84ACCE;
+    --Cor-5: #827191;
+}
+
+
+/*============================= Cabeçalho =============================*/
+
+
 .header-container{
-    background-image: linear-gradient(to top, #649173, #DBD5A4);
+    background-image: linear-gradient(to bottom, var(--Cor-4), #DBD5A4);
     width: 100%;
     height: 50vh;
     
@@ -37,69 +54,83 @@ img{
     -webkit-text-fill-color:transparent;
     */
 
+/*========================== Menu ================================*/
 
 .nav-container{
-    background-color: wheat;
     width: 100%;
-    
-    border: 2px solid yellow;
+    position: sticky;
+    top: -1px;
 }
+
 
 .nav-menu{
     background-color: black;
     max-width: 985px;
     height: 30px;
-    margin: auto;
-    padding: 29px 0px;
-
+    margin: 0 auto;
+    padding: 20px 0px;
     font-size: 0.4em;
-    border: 2px solid blue;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
 .link-menu{
     color: whitesmoke;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    border: 2px solid red;
-    padding-left: 25px;
-    padding-right: 30px;
+    padding: 5px 20px;
 }
+
+.link-menu:hover{
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 800;
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+/*========================== Corpo ==============================*/
 
 
 .main-container{
-    background-color: blueviolet;
+    background-color: var(--Cor-4);
     max-width: 985px;
-    margin: 20px auto;
+    margin: 0 auto;
 }
 
-.conteudo{
-    margin-top: 60px;
-}
 
+
+
+/*========================== Rodapé =======================================*/
 .footer-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:#D3959B;
-    color: black;
-    font-size: 0.5em;
-    padding: 15px;
 }
 
 .footer > span{
-    text-align: center;
     text-decoration: none;
     margin: 0 10px;
+    font-size: 0.5em;
 }
 
 .footer{
     margin: auto;
     padding: 0px 10px;
-    max-width: 985px;
+    width: 985px;
+    background-color: var(--Cor-5);
+    color: black;
+    padding: 8px;
+    font-size: 0.7em;
+    text-align: center;
 }
 
 
-/*---------------- Edição de texto ---------------*/
+/*========================= Edição de texto ===========================*/
 
 h3{
     font-family: 'Times New Roman', Times, serif;
