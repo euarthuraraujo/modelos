@@ -1,5 +1,11 @@
+Medidas do corpo do site
+
+max-width: 1130px;
+
+
+
 Medidas das imagens 
 
 Capa - 900x388
 Fundo - 98x80 
-Foto - 640x425 (tamanho p)
+Foto - 640x426 (tamanho p)
