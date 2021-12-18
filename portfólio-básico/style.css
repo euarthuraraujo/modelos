@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: var(--Cor-2);
+    background-image: url("imagens/fundo.png");
     font-size: 32px;
     font-family: var(--fonte-Poppins);
 }
@@ -28,7 +28,6 @@ body{
 
 
 .header-container{
-    background-image: linear-gradient(to bottom, var(--Cor-4), var(--Cor-0));
     width: 100%;
     height: 313px;
     
@@ -132,31 +131,46 @@ div.img{
     align-items: center;
 }
 
-.container-tel-email{
-    background-color: var(--Cor-1);
-    height: 130px;
-    width: 260px;
 
 
-    border: 2px solid red;
-}
-
-
-
-
-.container-icones-redes{
+.container-links{
     background-color: var(--Cor-1);
     height: 105px;
     width: 240px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    border-radius: 60px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-img.redes-sociais{
-    cursor: pointer;
-    margin: 25px;
+
+.container-links ul {
+    font-size: .5em;
+}
+
+.container-links ul li{
+    margin-bottom: 10px;
+    margin-left: 18px;    
+}
+
+.container-links a{
+    text-decoration: none;
+    background-color: var(--Cor-3);
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .7em;
+    color: black;
+}
+
+.container-links a:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    border: 1px solid black;
 }
 
 /*========================== Rodapé =======================================*/
