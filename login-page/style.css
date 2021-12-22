@@ -21,24 +21,22 @@ h4 {
     opacity: 0.85;
 }
 
-label {
-    font-size: 12.5px;
-    color: #000;
-    opacity: 0.8;
-    font-weight: 400;
-}
+
 
 .session {
     display: flex;
     justify-content: space-around;
 
-    border: 2px solid red;
+    box-shadow: 0px 7px 10px 2px rgb(0 0 0 / 12%);
+
 }
 
 .left {
-    width: 215px;
-    height: 320px;
-    background: black;
+    width: 230px;
+    height: 397px;
+    background: #A8D5E2;
+    display: grid;
+    place-items: center;
 }
 
 form {
@@ -71,6 +69,36 @@ form p {
     max-width: 200px;
 }
 
+label {
+    font-size: 12.5px;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 400;
+
+    display: none;
+}
+
+.floating-label {
+    margin-top: 20px;
+}
+
+input {
+    padding: 8px;
+    width: 220px;
+    border: none;
+    outline: none;
+
+    border-bottom: 3px groove #b08bf8;
+    
+}
+
+input::placeholder{
+    color: rgba(0, 0, 0, 0.5);
+}
+
+input:checked{
+    border: none;
+}
 button {
     -webkit-appearance: none;
     width: auto;
