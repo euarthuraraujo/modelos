@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Imagens Dinâmicas</title>
+</head>
+<body>
+    <section class="container">
+        <!-- Para criar essa dinâmica, precisa está nesse modelo. A tag "Source" tem que ser do modelo "media type", depois só muda a media (tira o min-width e coloca o max-width)-->
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> 
+            <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="Imagem flexível">
+        </picture>
+        <!-- Também é mais fácil seguir essa sequência. O código começa carregando a tag "img" e coloca nessa tag a imagem maior. Em seguida coloca a tag "source" com a escala decrecente ao tamanho da imagem.-->
+    </section>
+</body>
+</html>
